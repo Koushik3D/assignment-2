@@ -1,1 +1,221 @@
 /* Common CSS Styles */
+* {
+    font-family: 'Mulish', sans-serif;
+}
+
+:root {
+    --primary-color: #FF5400;
+}
+
+body {
+    margin: 0 100px;
+}
+
+.button-primary {
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    border-radius: 8px;
+    border: 0px;
+    cursor: pointer;
+}
+
+/* Header Section Styles */
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    display: flex;
+    gap: 10px;
+}
+
+nav>ul {
+    display: flex;
+}
+
+nav a {
+    color: #424247;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 50px;
+}
+
+.title-perfect {
+    color: #131318;
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+.title-holiday {
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    font-weight: 800;
+}
+
+/* Header Banner Styles */
+.header-banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url("../images/header-banner.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+.banner-title {
+    color: #FFFFFF;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.banner-description {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+.find-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.30);
+    padding: 0.8rem;
+    margin: 4rem 2rem;
+
+
+}
+
+.find-now {
+    color: rgba(19, 19, 24, 0.50);
+    border-radius: 8px;
+    background: #FFFFFF;
+    margin-right: 3rem;
+}
+
+.find-now input {
+    font-size: 1.15rem;
+    border: 0px;
+    border-radius: 8px;
+    padding: 0.8rem;
+}
+
+.find-now select {
+    font-size: 1.15rem;
+    border: 0px;
+    border-radius: 8px;
+    padding: 0.8rem;
+    cursor: pointer;
+}
+
+.find-now button {
+    font-size: 1.15rem;
+    padding: 0.8rem 3rem;
+}
+
+/* Popular Section Styles */
+.popular-container {
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.popular-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.popular-description {
+    color: rgba(19, 19, 24, 0.70);
+}
+
+.popular-img img {
+    width: 400px;
+    height: 400px;
+}
+
+/* Destination Section Styles */
+.destination-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/* Newsletter Styles */
+.newsletter-container {
+    display: flex;
+    gap: 4rem;
+    margin-top: 100px;
+}
+
+.newsletter-content {
+    border-radius: 16px;
+    border: 2px solid var(--primary-color);
+    padding: 1rem;
+}
+
+.news-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.news-description {
+    color: #5A5A5D;
+    margin-bottom: 3rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    border-radius: 8px;
+    border: 0px;
+    color: rgba(19, 19, 24, 0.30);
+    background: rgba(19, 19, 24, 0.05);
+    padding: 1rem 6rem;
+    margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+    border-radius: 8px;
+    border: 0px;
+    color: #FFFFFF;
+    background: var(--primary-color);
+    padding: 1rem 9rem;
+}
+
+.new-img {
+    width: 100%;
+}
+
+.discount {
+    border-radius: 8px;
+    border: 0px;
+    color: #FFFFFF;
+    padding: 1rem;
+    background: var(--primary-color);
+    transform: translateX(28.8rem) translateY(-9rem) rotate(-40deg);
+}
+
+.discount .web-url {
+    font-size: 1rem;
+}
+
+.discount .percentage {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Footer Section Styles */
+.footer-container {
+    text-align: center;
+    background: rgba(19, 19, 24, 0.05);
+    margin-top: 100px;
+}
