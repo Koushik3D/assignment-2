@@ -29,7 +29,13 @@ nav {
 
 .site-title {
     display: flex;
+    align-items: center;
     gap: 10px;
+}
+
+.site-title>img {
+    width: 2rem;
+    height: 2rem;
 }
 
 nav>ul {
@@ -149,6 +155,86 @@ nav li {
     grid-template-columns: repeat(2, 1fr);
 }
 
+/* Deals Section Styles */
+.deals-title {
+    color: #131318;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 100px;
+}
+
+.deals-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.deals-content-common {
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    width: 30rem;
+    height: 20rem;
+    padding: 1rem;
+    position: relative;
+    top: 4rem;
+    left: 35rem;
+
+}
+
+.deals-img-content-first {
+    background-image: url("../images/deals-content-1.png");
+    width: 100%;
+    height: 30rem;
+}
+
+.deals-img-content-second {
+    background-image: url("../images/deals-content-2.png");
+    width: 100%;
+    height: 30rem;
+}
+
+.deals-img-content-third {
+    background-image: url("../images/deals-content-1.png");
+    width: 100%;
+    height: 30rem;
+}
+
+.fa-solid {
+    color: var(--primary-color);
+}
+
+/* Video Section Styles */
+.video-container {
+    display: flex;
+    gap: 4rem;
+    margin-top: 100px;
+}
+
+.video-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.video-description {
+    color: #5A5A5D;
+    padding-bottom: 1rem;
+
+}
+
+.video-btn {
+    padding: 0.75rem 2.25rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.video-container ul>li {
+    padding-bottom: 1rem;
+}
+
 /* Newsletter Styles */
 .newsletter-container {
     display: flex;
@@ -157,7 +243,7 @@ nav li {
 }
 
 .newsletter-content {
-    border-radius: 16px;
+    border-radius: 1rem;
     border: 2px solid var(--primary-color);
     padding: 1rem;
 }
@@ -217,5 +303,49 @@ input[type="submit"] {
 .footer-container {
     text-align: center;
     background: rgba(19, 19, 24, 0.05);
-    margin-top: 100px;
+    margin-top: 6rem;
+    padding-bottom: 1rem;
+}
+
+footer .site-title {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+footer .site-title>img {
+    width: 2rem;
+    height: 2rem;
+    align-items: center;
+    margin-top: 0.75rem;
+}
+
+footer .title-perfect {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+footer .site-description {
+    margin: -2rem 10rem 2rem;
+}
+
+footer .title-holiday {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.site-description {
+    text-align: center;
+}
+
+.social-links {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-links>a {
+    margin-right: 20px;
 }
