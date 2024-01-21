@@ -150,9 +150,104 @@ nav li {
 }
 
 /* Destination Section Styles */
-.destination-img-container {
+.destination-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.destination-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    margin-top: -1rem;
+    margin-bottom: 3rem;
+}
+
+.destination-img-section-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.destination-img-section-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+
+}
+
+.destination-img-section-3 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.travel-img-text-1 {
+    position: absolute;
+    transform: translate(15rem, 8rem);
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.travel-img-text-2 {
+    position: absolute;
+    transform: translate(8rem, 8rem);
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.travel-img-text-3 {
+    position: absolute;
+    transform: translate(10rem, 8rem);
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+/* Why Choose Us Styles */
+.why-choose-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+}
+
+.why-choose-description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.hotel-section-content, .price-section-content {
+    border-radius: 16px;
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+
+.service-section-content {
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+}
+
+.choose-section-title {
+    color: #131318;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.choose-section-description {
+    color: #5A5A5D;
+    line-height: 1.5rem;
+    padding-top: -2rem;
 }
 
 /* Deals Section Styles */
