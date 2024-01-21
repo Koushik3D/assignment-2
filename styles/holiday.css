@@ -394,6 +394,46 @@ input[type="submit"] {
     font-weight: 700;
 }
 
+/* Customer Reviews Styles */
+.reviews-section-title {
+    color: #131318;
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.customer-reviews-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+}
+
+.customer-reviews-content {
+    color: #FFFFFF;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    line-height: 1.5rem;
+    text-align: justify;
+}
+
+.customer-reviews-name {
+    display: flex;
+    gap: 4rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.reviews-quotes {
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+
+
 /* Footer Section Styles */
 .footer-container {
     text-align: center;
