@@ -8,7 +8,7 @@
 }
 
 body {
-    margin: 0 100px;
+    margin: 0 5rem;
 }
 
 .button-primary {
@@ -38,7 +38,7 @@ nav {
     height: 2rem;
 }
 
-nav>ul {
+nav > ul {
     display: flex;
 }
 
@@ -89,28 +89,25 @@ nav li {
 
 .find-container {
     display: flex;
-    justify-content: center;
     align-items: center;
     border-radius: 8px;
     background: rgba(255, 255, 255, 0.30);
     padding: 0.8rem;
     margin: 4rem 2rem;
-
-
 }
 
 .find-now {
     color: rgba(19, 19, 24, 0.50);
     border-radius: 8px;
     background: #FFFFFF;
-    margin-right: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 }
 
 .find-now input {
     font-size: 1.15rem;
     border: 0px;
     border-radius: 8px;
-    padding: 0.8rem;
 }
 
 .find-now select {
@@ -129,24 +126,36 @@ nav li {
 /* Popular Section Styles */
 .popular-container {
     display: flex;
-    gap: 50px;
-    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 5rem;
+}
+
+.popular-content {
+    padding: 1rem;
 }
 
 .popular-title {
     color: #131318;
     font-size: 2.5rem;
     font-weight: 800;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .popular-description {
     color: rgba(19, 19, 24, 0.70);
+    line-height: 1.5rem;
 }
 
-.popular-img img {
-    width: 400px;
-    height: 400px;
+.popular-img > img {
+    width: 25rem;
+    height: 25rem;
+}
+
+.popular-item-btn {
+    padding: 1rem 2rem;
+    font-weight: 600;
 }
 
 /* Destination Section Styles */
@@ -167,15 +176,16 @@ nav li {
 .destination-img-section-1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
     margin-bottom: 1rem;
-    position: relative;
 }
 
 .destination-img-section-2 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 2rem;
     margin-bottom: 1rem;
 
 }
@@ -183,7 +193,7 @@ nav li {
 .destination-img-section-3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    gap: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -226,16 +236,25 @@ nav li {
     margin-bottom: 3rem;
 }
 
+.why-choose-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    gap: 2rem;
+}
+
 .hotel-section-content, .price-section-content {
     border-radius: 16px;
     border: 1px solid rgba(251, 181, 99, 0.20);
     background: rgba(251, 181, 99, 0.05);
+    padding: 1.25rem;
 }
 
 .service-section-content {
     border-radius: 16px;
     border: 1px solid rgba(41, 206, 246, 0.20);
     background: rgba(41, 206, 246, 0.05);
+    padding: 1.25rem;
 }
 
 .choose-section-title {
@@ -276,23 +295,27 @@ nav li {
     position: relative;
     top: 4rem;
     left: 35rem;
-
 }
 
 .deals-img-content-first {
     background-image: url("../images/deals-content-1.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 30rem;
+    margin-bottom: 1rem;
 }
 
 .deals-img-content-second {
     background-image: url("../images/deals-content-2.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 30rem;
+    margin-bottom: 1rem;
 }
 
 .deals-img-content-third {
     background-image: url("../images/deals-content-1.png");
+    background-repeat: no-repeat;
     width: 100%;
     height: 30rem;
 }
@@ -304,8 +327,9 @@ nav li {
 /* Video Section Styles */
 .video-container {
     display: flex;
-    gap: 4rem;
-    margin-top: 100px;
+    gap: 5rem;
+    margin-top: 4rem;
+    padding: 1rem;
 }
 
 .video-title {
@@ -317,7 +341,7 @@ nav li {
 .video-description {
     color: #5A5A5D;
     padding-bottom: 1rem;
-
+    line-height: 1.5rem;
 }
 
 .video-btn {
@@ -326,21 +350,42 @@ nav li {
     font-weight: 600;
 }
 
-.video-container ul>li {
-    padding-bottom: 1rem;
+.video-box {
+    position: relative;
+    transform: scale(1.25) translateY(5rem);
+}
+
+.video-link > img {
+    width: 100%;
+}
+
+.video-content ul > li {
+    padding-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.video-text {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
 }
 
 /* Newsletter Styles */
 .newsletter-container {
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 4rem;
-    margin-top: 100px;
+    margin-top: 5rem;
 }
 
 .newsletter-content {
     border-radius: 1rem;
     border: 2px solid var(--primary-color);
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 .news-title {
@@ -370,10 +415,17 @@ input[type="submit"] {
     color: #FFFFFF;
     background: var(--primary-color);
     padding: 1rem 9rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
 }
 
-.new-img {
+.news-img {
+    transform: translateY(2.5rem);
+}
+
+.news-img > img {
     width: 100%;
+    height: 28rem;
 }
 
 .discount {
@@ -382,7 +434,7 @@ input[type="submit"] {
     color: #FFFFFF;
     padding: 1rem;
     background: var(--primary-color);
-    transform: translateX(28.8rem) translateY(-9rem) rotate(-40deg);
+    transform: translateX(32rem) translateY(-9rem) rotate(-40deg);
 }
 
 .discount .web-url {
@@ -400,7 +452,7 @@ input[type="submit"] {
     font-size: 2.5rem;
     font-weight: 800;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 3rem;
 }
 
 .customer-reviews-section {
@@ -431,14 +483,11 @@ input[type="submit"] {
     margin-bottom: 1rem;
 }
 
-
-
-
 /* Footer Section Styles */
 .footer-container {
     text-align: center;
     background: rgba(19, 19, 24, 0.05);
-    margin-top: 6rem;
+    margin-top: 5rem;
     padding-bottom: 1rem;
 }
 
@@ -449,7 +498,7 @@ footer .site-title {
     font-size: 2rem;
 }
 
-footer .site-title>img {
+footer .site-title > img {
     width: 2rem;
     height: 2rem;
     align-items: center;
@@ -478,9 +527,121 @@ footer .title-holiday {
 
 .social-links {
     text-align: center;
-    padding: 20px;
+    padding: 1.25rem;
 }
 
-.social-links>a {
-    margin-right: 20px;
+.social-links > a {
+    margin-right: 1.25rem;
+}
+
+/* Responsive Design */
+/* Small Devices (Landscape Phones, 576px and up) Styles */
+@media screen and (max-width:576px) {
+    body {
+        margin: 0rem;
+    }
+
+    nav, nav > ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .why-choose-section {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+        
+    }
+
+    .newsletter-container {
+        flex-direction: column;
+    }
+
+    .destination-img-section-1,
+    .destination-img-section-2,
+    .destination-img-section-3
+    {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    .travel-img img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .popular-container,
+    .find-container,
+    .video-container
+    {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .video-box {
+        transform: scale(1) translateY(4rem);
+        margin-top: -2rem;
+        margin-bottom: 4rem;
+    }
+
+    .video-text {
+        top: 5rem;
+        left: 5rem;
+    }
+
+    .deals-content-common {
+        width: 18rem;
+        height: 18rem;
+        padding: 1rem;
+        top: 8rem;
+        left: 4rem;
+    }
+
+    .newsletter-container {
+        margin: 3rem 1rem;
+        gap: 1.5rem;
+    }
+
+    .news-img {
+        transform: translateY(0rem);
+    }
+    
+    .news-img > img {
+        width: 100%;
+        height: 20rem;
+    }
+
+    .discount {
+        transform: translateX(11.5rem) translateY(-9rem) rotate(-40deg);
+    }
+
+    .customer-reviews-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        margin: 1rem;
+    }
+    
+    footer .site-description {
+        margin: -2rem 2rem 2rem;
+    }
+    
+}
+
+/* Medium Devices (Tablets, 768px and up) Styles */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+    .customer-reviews-section {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.25rem;
+        margin: 1rem;
+    }
+    
+    footer .site-description {
+        margin: -2rem 4rem 2rem;
+    }
+}
+
+/* Large Devices (Desktops, 992px and up) Styles */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    footer .site-description {
+        margin: -2rem 6rem 2rem;
+    }
 }
